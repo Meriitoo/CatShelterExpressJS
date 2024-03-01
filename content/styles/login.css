@@ -1,0 +1,32 @@
+
+.login {
+    display: block;
+}
+
+.logiin-box {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input[type=text], input[type="password"], input[type="submit"] {
+    padding: 0.5rem 7.5rem 0.5rem 1rem;
+    border-radius: 7px;
+    border: none ;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.submit{
+    background-color: aquamarine;
+}
+

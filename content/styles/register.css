@@ -1,0 +1,26 @@
+.register{
+    display: block;
+}
+
+.register-box {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.submit{
+    background-color: aquamarine;
+}
+
+.not-owner {
+    color: red;
+
+}

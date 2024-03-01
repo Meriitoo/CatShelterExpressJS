@@ -1,0 +1,15 @@
+<main>
+    <form method="post" class="cat-form">
+        <h2>Shelter the cat</h2>
+        <img src="{{cat.image}}" alt="">
+        <label for="name">Name</label>
+        <input type="text" id="name" value="{{cat.name}}" disabled>
+        <label for="description">Description</label>
+        <textarea id="description">{{cat.description}}</textarea>
+        {{#if isBuyer}}
+        <a class="shelter-class-btn" href="#">YOU ALREADY SHELTER THE CAT</a>
+        {{else}}
+        <a class="shelter-class-btn" href="/cats/{{cat._id}}/shelter-cat">SHELTER THE CAT</a>
+        {{/if}}
+    </form>
+</main>

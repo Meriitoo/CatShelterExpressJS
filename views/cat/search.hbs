@@ -1,0 +1,33 @@
+<main>
+
+    <form method="GET">
+        <input type="text" name="name" value="{{name}}">
+        <button type="submit">Search</button>
+    </form>
+
+
+    {{#if cat}}
+        {{#each cat}}
+        <section class="cats">
+            <ul>
+                <li>
+                    <img src="{{image}}" alt="Black Cat">
+                    <p><span>Name: </span>{{name}}</p>
+                    <p><span>Breed: </span>{{breed.name}}</p>
+                    <p><span>Description: </span>{{description}}</p>
+                    
+                    <ul class="buttons">
+                        <li class="btn edit"><a href="/cats/{{_id}}/edit">Change Info</a></li>
+                        <li class="btn delete"><a href="/cats/{{_id}}/new-home">New Home</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        {{/each}}
+        {{else}}       
+            <div class="no-match">
+                <p>No match was found!</p>
+            </div> 
+    {{/if}}
+
+</main>

@@ -1,0 +1,26 @@
+<main>
+    <h1>Cat Shelter</h1>
+
+    </header>
+
+    {{#if cats}}
+    {{#each cats}}
+    <section class="cats">
+        <ul>
+            <li>
+                <img src="{{image}}" alt="Black Cat">
+                <p><span>Name: </span>{{name}}</p>
+                <p><span>Breed: </span>{{breed.name}}</p>
+                <p><span>Description: </span>{{description}}</p>
+                
+                <ul class="buttons">
+                    <li class="btn edit"><a href="/cats/{{_id}}/edit">Change Info</a></li>
+                    <li class="btn delete"><a href="/cats/{{_id}}/new-home">New Home</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    {{/each}}
+    {{/if}}
+
+</main>

@@ -1,0 +1,36 @@
+<main>
+    <!-- In case of error, you should display div with class "errorContainer" -->
+    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+    <!-- <div>
+        <div class="errorContainer">
+            <p>Error</p>
+        </div>
+    </div> -->
+    
+    <div class="register-box">
+        <h1>Register</h1>
+        <h4>It's free and only take a minute</h4>
+        <form class="register" method="POST">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username.." value="{{username}}">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Email.." value="{{email}}">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password.." value="{{password}}">
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" name="repeatPassword" placeholder="Confirm Password..">
+            </div>
+            <div class="form-group">
+                <input  class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+</main>

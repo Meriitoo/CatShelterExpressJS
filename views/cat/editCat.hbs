@@ -1,0 +1,23 @@
+<main>
+    <form method="POST" class="cat-form" enctype="multipart/form-data">
+        <h2>Edit Cat</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" value="{{name}}">
+        <label for="description">Description</label>
+        <textarea id="description" name="description">{{description}}</textarea>
+        <label>Image:</label>
+        <input type="text" id="image" name="image" placeholder="http://..." value="{{image}}">
+        <label for="group">Breed</label>
+        <select id="group" name="breed">
+            {{#each breeds}}
+            <option value="{{_id}}">{{name}}</option>
+            {{/each}}
+        </select>
+        {{#if isOwner }}
+            <button class="edit-btn" >Edit Cat</button>
+            <a class="delete-btn" "/cats/{{_id}}/delete">Delete</a>
+        {{else}}
+        <p class="not-owner">You are not the owner of the cat, you can't edit!!</p>
+        {{/if}}
+    </form>
+</main>
